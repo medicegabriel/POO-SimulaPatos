@@ -1,17 +1,13 @@
-
-// Interface for flying behavior
 public interface IVoo
 {
     void Voar();
 }
 
-// Interface for sound behavior
 public interface ISom
 {
     void FazerSom();
 }
 
-// Concrete implementation of flying behavior for ducks that can fly
 public class VooComum : IVoo
 {
     public void Voar()
@@ -20,7 +16,6 @@ public class VooComum : IVoo
     }
 }
 
-// Concrete implementation of flying behavior for ducks that cannot fly
 public class VooNaoVoar : IVoo
 {
     public void Voar()
@@ -29,7 +24,6 @@ public class VooNaoVoar : IVoo
     }
 }
 
-// Concrete implementation of sound behavior for ducks that quack
 public class SomGrasnar : ISom
 {
     public void FazerSom()
@@ -38,7 +32,6 @@ public class SomGrasnar : ISom
     }
 }
 
-// Concrete implementation of sound behavior for silent ducks
 public class SomMudo : ISom
 {
     public void FazerSom()
@@ -47,7 +40,6 @@ public class SomMudo : ISom
     }
 }
 
-// Abstract Duck class
 public abstract class Duck
 {
     protected IVoo vooComportamento;
